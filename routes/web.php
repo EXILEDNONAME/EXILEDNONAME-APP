@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/dashboard', function () { return view('index'); });
+Route::get('/dashboard', 'Backend\DashboardController@index')->name('index');
+Route::get('/dashboard/logout', 'Backend\DashboardController@logout')->name('logout');
