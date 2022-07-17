@@ -25,7 +25,7 @@
                         <option value="4">24 Hours</option>
                       </select>
                     </div>
-                    <a href="#" class="btn btn-sm btn-primary my-1">View All</a>
+                    <a href="#" class="btn btn-sm btn-primary my-1"> View All </a>
                   </div>
                 </div>
                 <div class="card-body p-0">
