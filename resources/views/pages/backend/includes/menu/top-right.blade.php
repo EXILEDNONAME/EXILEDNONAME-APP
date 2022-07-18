@@ -1,11 +1,11 @@
 <div class="d-flex align-items-stretch flex-shrink-0">
 
-  @include('pages.backend.includes.menu.top-right.search')
-  @include('pages.backend.includes.menu.top-right.activity')
+  <!-- include('pages.backend.includes.menu.top-right.search') -->
+  <!-- include('pages.backend.includes.menu.top-right.activity') -->
   @include('pages.backend.includes.menu.top-right.notification')
-  @include('pages.backend.includes.menu.top-right.chat')
-  @include('pages.backend.includes.menu.top-right.quicklink')
-  @include('pages.backend.includes.menu.top-right.theme')
+  <!-- include('pages.backend.includes.menu.top-right.chat') -->
+  <!-- include('pages.backend.includes.menu.top-right.quicklink') -->
+  <!-- include('pages.backend.includes.menu.top-right.theme') -->
   @include('pages.backend.includes.menu.top-right.user')
 
   <div class="d-flex align-items-center d-lg-none ms-2 me-n3" title="Show header menu">

@@ -12,24 +12,8 @@
           <div class="post d-flex flex-column-fluid" id="kt_post">
             <div id="kt_content_container" class="container-xxl">
               <div class="card mb-5 mb-lg-10">
-                <div class="card-header">
-                  <div class="card-title">
-                    <h3>Login Sessions</h3>
-                  </div>
-                  <div class="card-toolbar">
-                    <div class="my-1 me-4">
-                      <select class="form-select form-select-sm form-select-solid w-125px" data-control="select2" data-placeholder="Select Hours" data-hide-search="true">
-                        <option value="1" selected="selected">1 Hours</option>
-                        <option value="2">6 Hours</option>
-                        <option value="3">12 Hours</option>
-                        <option value="4">24 Hours</option>
-                      </select>
-                    </div>
-                    <a href="#" class="btn btn-sm btn-primary my-1"> View All </a>
-                  </div>
-                </div>
                 <div class="card-body p-0">
-                  <!--  -->
+                  @stack('content')
                 </div>
               </div>
             </div>

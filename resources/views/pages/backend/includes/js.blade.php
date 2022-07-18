@@ -18,3 +18,5 @@
 <script src="/assets/backend/js/custom/utilities/modals/offer-a-deal/complete.js"></script>
 <script src="/assets/backend/js/custom/utilities/modals/offer-a-deal/main.js"></script>
 <script src="/assets/backend/js/custom/utilities/modals/users-search.js"></script>
+
+@stack('js')

@@ -15,7 +15,7 @@ class DashboardController extends Controller {
   }
 
   public function index() {
-    return view('index');
+    return view('pages.backend.dashboard');
   }
 
   public function documentation() {
@@ -23,7 +23,7 @@ class DashboardController extends Controller {
   }
 
   public function file_manager() {
-    return view('pages.backend.system.file-manager.index');
+    return view('pages.backend.file-manager');
   }
 
   public function message() {
