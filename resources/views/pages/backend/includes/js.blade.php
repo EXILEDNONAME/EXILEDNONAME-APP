@@ -19,4 +19,12 @@
 <script src="/assets/backend/js/custom/utilities/modals/offer-a-deal/main.js"></script>
 <script src="/assets/backend/js/custom/utilities/modals/users-search.js"></script>
 
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<script>
+																																																												$(document).ready(function () {
+																																																													$('#example').DataTable();
+																																																												});
+																																																												</script>
+
 @stack('js')

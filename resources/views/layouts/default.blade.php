@@ -11,11 +11,9 @@
           @include('pages.backend.includes.toolbar')
           <div class="post d-flex flex-column-fluid" id="kt_post">
             <div id="kt_content_container" class="container-xxl">
-              <div class="card mb-5 mb-lg-10">
-                <div class="card-body p-0">
+
                   @stack('content')
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\Models\User;
+use App\User;
 
 class DashboardController extends Controller {
 
@@ -34,9 +34,9 @@ class DashboardController extends Controller {
     return view('pages.backend.system.profile.change-password');
   }
 
-  public function profile_account_information(Request $request) {
+  public function profile_overview(Request $request) {
     $data = User::where('username', Auth::User()->username)->first();
-    return view('pages.backend.system.profile.account-information', compact('data'));
+    return view('pages.backend.system.profile.overview', compact('data'));
   }
 
   public function profile_update_account_information(Request $request, $id) {
