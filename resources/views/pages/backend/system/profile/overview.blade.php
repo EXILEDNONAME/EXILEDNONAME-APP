@@ -7,8 +7,8 @@
     <div class="card card-xl-stretch">
       <div class="card-header align-items-center">
         <h3 class="card-title align-items-start flex-column">
-          <span class="fw-bolder mb-2 text-dark">Activities</span>
-          <span class="text-muted fw-bold fs-7">890,344 Sales</span>
+          <span class="fw-bolder mb-2 text-dark"> Main </span>
+          <span class="text-muted fw-bold fs-7"> Datatable Record Index </span>
         </h3>
         <div class="card-toolbar">
           <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
@@ -22,19 +22,12 @@
                 </g>
               </svg>
             </span>
-            <!--end::Svg Icon-->
           </button>
-          <!--begin::Menu 1-->
           <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_6244462fda247">
-            <!--begin::Header-->
             <div class="px-7 py-5">
               <div class="fs-5 text-dark fw-bolder">Filter Options</div>
             </div>
-            <!--end::Header-->
-            <!--begin::Menu separator-->
             <div class="separator border-gray-200"></div>
-            <!--end::Menu separator-->
-            <!--begin::Form-->
             <div class="px-7 py-5">
               <div class="mb-10">
                 <label class="form-label fw-bold">Notifications:</label>
@@ -42,7 +35,6 @@
                   <input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked">
                   <label class="form-check-label">Enabled</label>
                 </div>
-                <!--end::Switch-->
               </div>
               <div class="d-flex justify-content-end">
                 <button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
@@ -127,8 +119,8 @@
       <!--begin::Header-->
       <div class="card-header align-items-center">
         <h3 class="card-title align-items-start flex-column">
-          <span class="fw-bolder mb-2 text-dark">Activities</span>
-          <span class="text-muted fw-bold fs-7">890,344 Sales</span>
+          <span class="fw-bolder text-dark">Activities</span>
+
         </h3>
         <div class="card-toolbar">
           <!--begin::Menu-->
