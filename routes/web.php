@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome'); });
+Route::get('/theme', function () { return view('layouts.default'); });
 
 Auth::routes();
 
