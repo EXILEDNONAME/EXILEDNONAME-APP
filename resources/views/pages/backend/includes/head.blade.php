@@ -1,42 +1,52 @@
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <base href="../../../">
+  <meta charset="utf-8" />
+  <title>Metronic | Empty Page</title>
+  <meta name="description" content="Page with empty content">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 
-  <!-- Twitter -->
-  <meta name="twitter:site" content="@themepixels">
-  <meta name="twitter:creator" content="@themepixels">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bracket">
-  <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
-  <meta name="twitter:image" content="http://themepixels.me/bracket/img/bracket-social.png">
+  <link href="/assets/backend/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/custom/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
-  <!-- Facebook -->
-  <meta property="og:url" content="http://themepixels.me/bracket">
-  <meta property="og:title" content="Bracket">
-  <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+  <!--end:: Global Optional Vendors -->
 
-  <meta property="og:image" content="http://themepixels.me/bracket/img/bracket-social.png">
-  <meta property="og:image:secure_url" content="http://themepixels.me/bracket/img/bracket-social.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="600">
+  <!--begin::Global Theme Styles(used by all pages) -->
+  <link href="/assets/backend/css/demo1/style.bundle.css" rel="stylesheet" type="text/css" />
 
-  <!-- Meta -->
-  <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-  <meta name="author" content="ThemePixels">
+  <!--end::Global Theme Styles -->
 
-  <title>Bracket Responsive Bootstrap 4 Admin Template</title>
+  <!--begin::Layout Skins(used by all pages) -->
+  <link href="/assets/backend/css/demo1/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/css/demo1/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/css/demo1/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/backend/css/demo1/skins/aside/dark.css" rel="stylesheet" type="text/css" />
 
-  <!-- vendor css -->
-  <link href="/assets/backend/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-  <link href="/assets/backend/lib/Ionicons/css/ionicons.css" rel="stylesheet">
-  <link href="/assets/backend/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-  <link href="/assets/backend/lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
-  <link href="/assets/backend/lib/highlightjs/github.css" rel="stylesheet">
-  <link href="/assets/backend/lib/datatables/jquery.dataTables.css" rel="stylesheet">
-  <link href="/assets/backend/lib/select2/css/select2.min.css" rel="stylesheet">
-
-  <!-- Bracket CSS -->
-  <link rel="stylesheet" href="/assets/backend/css/bracket.css">
+  <!--end::Layout Skins -->
+  <link rel="shortcut icon" href="/assets/backend/media/logos/favicon.ico" />
 </head>
