@@ -5,12 +5,193 @@
 @endpush
 
 @push('content')
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card card-custom gutter-b" data-card="true" id="kt_card_1">
+      <div class="card-header">
+        <h4 class="card-title">
+          <span class="card-label font-weight-bolder text-dark"> {{ trans('default.label.main') }} </span>
+        </h4>
+        <div class="card-toolbar">
+          <a id="table-refresh" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="reload">
+            <i class="fas fa-sync-alt" data-toggle="tooltip" title="" data-original-title="{{ trans('default.label.reload') }}"></i>
+          </a>
 
+          <div data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true">
+            <a class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="reload" data-toggle="tooltip" data-placement="top" title="" data-original-title="Filter"><i class="fas fa-filter"></i></a>
+          </div>
+
+          <div class="dropdown dropdown-inline" bis_skin_checked="1">
+            <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-download"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" bis_skin_checked="1">
+              <ul class="navi navi-hover py-5">
+                <li class="navi-item" data-toggle="tooltip" title="" data-original-title="Copy as Text">
+                  <a href="javascript:void(0);" class="navi-link" id="export_copy">
+                    <i class="navi-icon fa fa-copy"></i> {{ trans('default.label.export.copy') }}
+                  </a>
+                </li>
+                <li class="navi-item" data-toggle="tooltip" title="" data-original-title="Export to Excel">
+                  <a href="javascript:void(0);" class="navi-link" id="export_excel">
+                    <i class="navi-icon fa fa-file-excel"></i> {{ trans('default.label.export.excel') }}
+                  </a>
+                </li>
+                <li class="navi-item" data-toggle="tooltip" title="" data-original-title="Export to PDF">
+                  <a href="javascript:void(0);" class="navi-link" id="export_pdf">
+                    <i class="navi-icon fa fa-file-pdf"></i> {{ trans('default.label.export.pdf') }}
+                  </a>
+                </li>
+                <li class="navi-item" data-toggle="tooltip" title="" data-original-title="Export to CSV">
+                  <a href="javascript:void(0);" class="navi-link" id="export_csv">
+                    <i class="navi-icon fa fa-file"></i> {{ trans('default.label.export.csv') }}
+                  </a>
+                </li>
+                <li class="navi-item" data-toggle="tooltip" title="" data-original-title="Print">
+                  <a href="javascript:void(0);" class="navi-link" id="export_print">
+                    <i class="navi-icon fa fa-print"></i> {{ trans('default.label.export.print') }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="toggle">
+            <i class="fas fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <div class="accordion" id="accordionExample1">
+          <div id="collapseOne1" class="collapse hide" data-parent="#accordionExample1">
+            <div class="mb-2">
+              <div class="col-lg-12 my-2 my-md-0">
+                <div class="d-flex align-items-center">
+                  <select data-column="-2" class="form-control filter-active">
+                    <option value=""> - {{ trans('default.label.filter-active') }} - </option>
+                    <option value="1"> {{ trans('default.label.yes') }} </option>
+                    <option value="0"> {{ trans('default.label.no') }} </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table width="100%" class="table table-row-bordered table-hover table-checkable" id="exilednoname">
+            <thead>
+              <tr>
+                <th class="no-export"> </th>
+                <th> No. </th>
+                @stack('table-header')
+                <th class="no-export"> Active </th>
+                <th class="no-export"> </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-4">
+    <div class="card card-custom gutter-b" data-card="true" id="kt_card_1">
+      <div class="card-header">
+        <div class="card-title">
+          <h3 class="card-label"> {{ trans('default.label.histories') }} </h3>
+        </div>
+        <div class="card-toolbar">
+          <a href="#" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="toggle">
+            <i class="fas fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-body pt-0">
+        <div class="example-preview">
+          <div class="timeline timeline-2">
+            <div class="timeline-bar"></div>
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                <a href="#">12 new users registered and pending for activation</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-badge bg-success"></span>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                Scheduled system reboot as completed.
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-badge"></span>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                <span class="mr-3">
+                  New order has been placed and pending for processing.
+                </span>
+
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-badge bg-danger"></span>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                <span class="mr-3">
+                  Database server overloaded 80% and requires quick reboot <span class="label label-inline label-danger font-weight-bolder">pending</span>
+                </span>
+
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-badge bg-warning"></span>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                <span class="mr-3">
+                  System error occured and hard drive has been shutdown.
+                </span>
+
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-badge bg-success"></span>
+              <div class="timeline-content d-flex align-items-center justify-content-between">
+                Production server is rebooting.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-8">
+    <div class="card card-custom gutter-b" data-card="true" id="kt_card_1">
+      <div class="card-header">
+        <div class="card-title">
+          <h3 class="card-label"> {{ trans('default.label.graphs') }} </h3>
+        </div>
+        <div class="card-toolbar">
+          <a href="#" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="toggle">
+            <i class="fas fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-body pt-0">
+        <div id="chart_1"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
 @endpush
 
 @push('js')
 <script src="/assets/backend/plugins/custom/datatables/datatables.bundle.js?v=7.0.6"></script>
 <script src="/assets/backend/js/pages/crud/datatables/data-sources/html.js?v=7.0.6"></script>
+<script src="/assets/backend/js/pages/features/charts/apexcharts.js?v=7.0.6"></script>
 
 <script>
 $(document).ready(function() {
@@ -34,14 +215,7 @@ var KTDatatablesExtensionsKeytable = function() {
       ajax: {
         url: "{{ URL::current() }}",
         "data" : function (d) {
-          @if ( !empty($daterange) && $daterange == 'true')
-          d.date_start = $('#date_start').val();
-          d.date_end = $('#date_end').val();
-          @endif
           d.filter_active = $('.filter_active').val();
-          @if ( !empty($status) && $status == 'true')
-          d.filter_status = $('.filter-status').val();
-          @endif
           @stack('filter-function')
         }
       },
@@ -183,21 +357,10 @@ var KTDatatablesExtensionsKeytable = function() {
       ],
       order: [[1, 'asc']]
     });
-    // FILTER
-    @if ( !empty($daterange) && $daterange == 'true')
-    $('#date_start').change(function () { table.draw(); });
-    $('#date_end').change(function () { table.draw(); });
-    @endif
+
     $('.filter-active').change(function () {
       table.column(-2).search( $(this).val() ).draw();
     });
-    @if ( !empty($status) && $status == 'true')
-    $('.filter-status').change(function () {
-      table.column(2)
-      .search( $(this).val() )
-      .draw();
-    });
-    @endif
     @stack('filter-body')
     // END FILTER
     $('#reset').click(function(){
@@ -211,11 +374,11 @@ var KTDatatablesExtensionsKeytable = function() {
       $('#toolbar_delete').collapse('hide');
       table.ajax.reload();
     });
-    $('#export_print').on('click', function(e) { e.preventDefault(); table.button(0).trigger(); });
     $('#export_copy').on('click', function(e) { e.preventDefault(); table.button(1).trigger(); });
     $('#export_excel').on('click', function(e) { e.preventDefault(); table.button(2).trigger(); });
-    $('#export_csv').on('click', function(e) { e.preventDefault(); table.button(3).trigger(); });
     $('#export_pdf').on('click', function(e) { e.preventDefault(); table.button(4).trigger(); });
+    $('#export_csv').on('click', function(e) { e.preventDefault(); table.button(3).trigger(); });
+    $('#export_print').on('click', function(e) { e.preventDefault(); table.button(0).trigger(); });
     $("#table-filter-show").on("click", function() {
       $('#toolbar_filter').collapse('show');
       $('#toolbar_filter_show').collapse('hide');
