@@ -1,5 +1,62 @@
-<div class="engage-toolbar d-flex position-fixed px-5 fw-bolder zindex-2 top-50 end-0 transform-90 mt-20 gap-2">
-  <button id="kt_engage_demos_toggle" class="engage-demos-toggle btn btn-flex h-35px bg-body btn-color-gray-700 btn-active-color-gray-900 shadow-sm fs-6 px-4 rounded-top-0" title="Check out 22 more demos" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover"><span id="kt_engage_demos_label">Demos</span></button>
-  <button id="kt_help_toggle" class="engage-help-toggle btn btn-flex h-35px bg-body btn-color-gray-700 btn-active-color-gray-900 shadow-sm px-5 rounded-top-0" title="Learn &amp; Get Inspired" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">Help</button>
-  <a href="https://1.envato.market/EA4JP" target="_blank" class="engage-purchase-link btn btn-color-gray-700 bg-body btn-active-color-gray-900' btn-flex h-35px px-5 shadow-sm rounded-top-0">Buy now</a>
+<ul class="sticky-toolbar nav flex-column pl-2 pr-2 pt-3 pb-3 mt-4">
+  <!--begin::Item-->
+  <li class="nav-item mb-2" id="kt_demo_panel_toggle" data-toggle="tooltip"  title="Check out more demos" data-placement="right">
+    <a class="btn btn-sm btn-icon btn-bg-light btn-icon-success btn-hover-success" href="#">
+      <i class="flaticon2-drop"></i>
+    </a>
+  </li>
+  <!--end::Item-->
+
+  <!--begin::Item-->
+  <li class="nav-item mb-2" data-toggle="tooltip" title="Layout Builder" data-placement="left">
+    <a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="https://preview.keenthemes.com/metronic/preview/demo1/builder.html" target="_blank">
+      <i class="flaticon2-gear"></i>
+    </a>
+  </li>
+  <!--end::Item-->
+
+  <!--begin::Item-->
+  <li class="nav-item mb-2" data-toggle="tooltip" title="Documentation" data-placement="left">
+    <a class="btn btn-sm btn-icon btn-bg-light btn-icon-warning btn-hover-warning" href="https://keenthemes.com/metronic/?page=docs" target="_blank">
+      <i class="flaticon2-telegram-logo"></i>
+    </a>
+  </li>
+  <!--end::Item-->
+
+  <!--begin::Item-->
+  <li class="nav-item" id="kt_sticky_toolbar_chat_toggler" data-toggle="tooltip" title="Chat Example" data-placement="left">
+    <a class="btn btn-sm btn-icon btn-bg-light btn-icon-danger btn-hover-danger" href="#" data-toggle="modal" data-target="#kt_chat_modal">
+      <i class="flaticon2-chat-1"></i>
+    </a>
+  </li>
+  <!--end::Item-->
+</ul>
+
+<div id="kt_demo_panel" class="offcanvas offcanvas-right p-10">
+  <!--begin::Header-->
+  <div class="offcanvas-header d-flex align-items-center justify-content-between pb-7">
+    <h4 class="font-weight-bold m-0">
+      Select A Demo
+    </h4>
+    <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_demo_panel_close">
+      <i class="ki ki-close icon-xs text-muted"></i>
+    </a>
+  </div>
+  <!--end::Header-->
+
+  <!--begin::Content-->
+  <div class="offcanvas-content">
+    <!--begin::Wrapper-->
+
+    <!--end::Wrapper-->
+
+    <!--begin::Purchase-->
+    <div class="offcanvas-footer">
+      <a href="https://1.envato.market/EA4JP" target="_blank" class="btn btn-block btn-danger btn-shadow font-weight-bolder text-uppercase">
+        Buy Metronic Now!
+      </a>
+    </div>
+    <!--end::Purchase-->
+  </div>
+  <!--end::Content-->
 </div>

@@ -1,539 +1,505 @@
-<div class="d-flex align-items-center ms-1 ms-lg-3">
-  <!--begin::Menu- wrapper-->
-  <div class="btn btn-icon btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-    <!--begin::Svg Icon | path: icons/duotune/general/gen022.svg-->
-    <span class="svg-icon svg-icon-1">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M11.2929 2.70711C11.6834 2.31658 12.3166 2.31658 12.7071 2.70711L15.2929 5.29289C15.6834 5.68342 15.6834 6.31658 15.2929 6.70711L12.7071 9.29289C12.3166 9.68342 11.6834 9.68342 11.2929 9.29289L8.70711 6.70711C8.31658 6.31658 8.31658 5.68342 8.70711 5.29289L11.2929 2.70711Z" fill="currentColor" />
-        <path d="M11.2929 14.7071C11.6834 14.3166 12.3166 14.3166 12.7071 14.7071L15.2929 17.2929C15.6834 17.6834 15.6834 18.3166 15.2929 18.7071L12.7071 21.2929C12.3166 21.6834 11.6834 21.6834 11.2929 21.2929L8.70711 18.7071C8.31658 18.3166 8.31658 17.6834 8.70711 17.2929L11.2929 14.7071Z" fill="currentColor" />
-        <path opacity="0.3" d="M5.29289 8.70711C5.68342 8.31658 6.31658 8.31658 6.70711 8.70711L9.29289 11.2929C9.68342 11.6834 9.68342 12.3166 9.29289 12.7071L6.70711 15.2929C6.31658 15.6834 5.68342 15.6834 5.29289 15.2929L2.70711 12.7071C2.31658 12.3166 2.31658 11.6834 2.70711 11.2929L5.29289 8.70711Z" fill="currentColor" />
-        <path opacity="0.3" d="M17.2929 8.70711C17.6834 8.31658 18.3166 8.31658 18.7071 8.70711L21.2929 11.2929C21.6834 11.6834 21.6834 12.3166 21.2929 12.7071L18.7071 15.2929C18.3166 15.6834 17.6834 15.6834 17.2929 15.2929L14.7071 12.7071C14.3166 12.3166 14.3166 11.6834 14.7071 11.2929L17.2929 8.70711Z" fill="currentColor" />
-      </svg>
-    </span>
-    <!--end::Svg Icon-->
-  </div>
-  <!--begin::Menu-->
-  <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true">
-    <!--begin::Heading-->
-    <div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('/assets/backend/media/misc/pattern-1.jpg')">
-      <!--begin::Title-->
-      <h3 class="text-white fw-bold px-9 mt-10 mb-6">Notifications
-      <span class="fs-8 opacity-75 ps-3">24 reports</span></h3>
-      <!--end::Title-->
-      <!--begin::Tabs-->
-      <ul class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-bold px-9">
-        <li class="nav-item">
-          <a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_2">Updates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_3">Logs</a>
-        </li>
-      </ul>
-      <!--end::Tabs-->
+<div class="dropdown">
+  <!--begin::Toggle-->
+  <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+    <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1 pulse pulse-primary">
+      <span class="svg-icon svg-icon-xl svg-icon-primary"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Code/Compiling.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect x="0" y="0" width="24" height="24"/>
+          <path d="M2.56066017,10.6819805 L4.68198052,8.56066017 C5.26776695,7.97487373 6.21751442,7.97487373 6.80330086,8.56066017 L8.9246212,10.6819805 C9.51040764,11.267767 9.51040764,12.2175144 8.9246212,12.8033009 L6.80330086,14.9246212 C6.21751442,15.5104076 5.26776695,15.5104076 4.68198052,14.9246212 L2.56066017,12.8033009 C1.97487373,12.2175144 1.97487373,11.267767 2.56066017,10.6819805 Z M14.5606602,10.6819805 L16.6819805,8.56066017 C17.267767,7.97487373 18.2175144,7.97487373 18.8033009,8.56066017 L20.9246212,10.6819805 C21.5104076,11.267767 21.5104076,12.2175144 20.9246212,12.8033009 L18.8033009,14.9246212 C18.2175144,15.5104076 17.267767,15.5104076 16.6819805,14.9246212 L14.5606602,12.8033009 C13.9748737,12.2175144 13.9748737,11.267767 14.5606602,10.6819805 Z" fill="#000000" opacity="0.3"/>
+          <path d="M8.56066017,16.6819805 L10.6819805,14.5606602 C11.267767,13.9748737 12.2175144,13.9748737 12.8033009,14.5606602 L14.9246212,16.6819805 C15.5104076,17.267767 15.5104076,18.2175144 14.9246212,18.8033009 L12.8033009,20.9246212 C12.2175144,21.5104076 11.267767,21.5104076 10.6819805,20.9246212 L8.56066017,18.8033009 C7.97487373,18.2175144 7.97487373,17.267767 8.56066017,16.6819805 Z M8.56066017,4.68198052 L10.6819805,2.56066017 C11.267767,1.97487373 12.2175144,1.97487373 12.8033009,2.56066017 L14.9246212,4.68198052 C15.5104076,5.26776695 15.5104076,6.21751442 14.9246212,6.80330086 L12.8033009,8.9246212 C12.2175144,9.51040764 11.267767,9.51040764 10.6819805,8.9246212 L8.56066017,6.80330086 C7.97487373,6.21751442 7.97487373,5.26776695 8.56066017,4.68198052 Z" fill="#000000"/>
+        </g>
+      </svg><!--end::Svg Icon--></span>		                        <span class="pulse-ring"></span>
     </div>
-    <!--end::Heading-->
-    <!--begin::Tab content-->
-    <div class="tab-content">
-      <!--begin::Tab panel-->
-      <div class="tab-pane fade" id="kt_topbar_notifications_1" role="tabpanel">
-        <!--begin::Items-->
-        <div class="scroll-y mh-325px my-5 px-8">
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-primary">
-                  <!--begin::Svg Icon | path: icons/duotune/technology/teh008.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path opacity="0.3" d="M11 6.5C11 9 9 11 6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5ZM17.5 2C15 2 13 4 13 6.5C13 9 15 11 17.5 11C20 11 22 9 22 6.5C22 4 20 2 17.5 2ZM6.5 13C4 13 2 15 2 17.5C2 20 4 22 6.5 22C9 22 11 20 11 17.5C11 15 9 13 6.5 13ZM17.5 13C15 13 13 15 13 17.5C13 20 15 22 17.5 22C20 22 22 20 22 17.5C22 15 20 13 17.5 13Z" fill="currentColor" />
-                      <path d="M17.5 16C17.5 16 17.4 16 17.5 16L16.7 15.3C16.1 14.7 15.7 13.9 15.6 13.1C15.5 12.4 15.5 11.6 15.6 10.8C15.7 9.99999 16.1 9.19998 16.7 8.59998L17.4 7.90002H17.5C18.3 7.90002 19 7.20002 19 6.40002C19 5.60002 18.3 4.90002 17.5 4.90002C16.7 4.90002 16 5.60002 16 6.40002V6.5L15.3 7.20001C14.7 7.80001 13.9 8.19999 13.1 8.29999C12.4 8.39999 11.6 8.39999 10.8 8.29999C9.99999 8.19999 9.20001 7.80001 8.60001 7.20001L7.89999 6.5V6.40002C7.89999 5.60002 7.19999 4.90002 6.39999 4.90002C5.59999 4.90002 4.89999 5.60002 4.89999 6.40002C4.89999 7.20002 5.59999 7.90002 6.39999 7.90002H6.5L7.20001 8.59998C7.80001 9.19998 8.19999 9.99999 8.29999 10.8C8.39999 11.5 8.39999 12.3 8.29999 13.1C8.19999 13.9 7.80001 14.7 7.20001 15.3L6.5 16H6.39999C5.59999 16 4.89999 16.7 4.89999 17.5C4.89999 18.3 5.59999 19 6.39999 19C7.19999 19 7.89999 18.3 7.89999 17.5V17.4L8.60001 16.7C9.20001 16.1 9.99999 15.7 10.8 15.6C11.5 15.5 12.3 15.5 13.1 15.6C13.9 15.7 14.7 16.1 15.3 16.7L16 17.4V17.5C16 18.3 16.7 19 17.5 19C18.3 19 19 18.3 19 17.5C19 16.7 18.3 16 17.5 16Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Project Alice</a>
-                <div class="text-gray-400 fs-7">Phase 1 development</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">1 hr</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-danger">
-                  <!--begin::Svg Icon | path: icons/duotune/general/gen044.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-danger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor" />
-                      <rect x="11" y="14" width="7" height="2" rx="1" transform="rotate(-90 11 14)" fill="currentColor" />
-                      <rect x="11" y="17" width="2" height="2" rx="1" transform="rotate(-90 11 17)" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">HR Confidential</a>
-                <div class="text-gray-400 fs-7">Confidential staff documents</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">2 hrs</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-warning">
-                  <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="currentColor" />
-                      <path d="M14 6V5H10V6H8V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V6H14ZM20 15H14V16C14 16.6 13.5 17 13 17H11C10.5 17 10 16.6 10 16V15H4C3.6 15 3.3 14.9 3 14.7V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V14.7C20.7 14.9 20.4 15 20 15Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Company HR</a>
-                <div class="text-gray-400 fs-7">Corporeate staff profiles</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">5 hrs</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-success">
-                  <!--begin::Svg Icon | path: icons/duotune/files/fil023.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-success">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path opacity="0.3" d="M5 15C3.3 15 2 13.7 2 12C2 10.3 3.3 9 5 9H5.10001C5.00001 8.7 5 8.3 5 8C5 5.2 7.2 3 10 3C11.9 3 13.5 4 14.3 5.5C14.8 5.2 15.4 5 16 5C17.7 5 19 6.3 19 8C19 8.4 18.9 8.7 18.8 9C18.9 9 18.9 9 19 9C20.7 9 22 10.3 22 12C22 13.7 20.7 15 19 15H5ZM5 12.6H13L9.7 9.29999C9.3 8.89999 8.7 8.89999 8.3 9.29999L5 12.6Z" fill="currentColor" />
-                      <path d="M17 17.4V12C17 11.4 16.6 11 16 11C15.4 11 15 11.4 15 12V17.4H17Z" fill="currentColor" />
-                      <path opacity="0.3" d="M12 17.4H20L16.7 20.7C16.3 21.1 15.7 21.1 15.3 20.7L12 17.4Z" fill="currentColor" />
-                      <path d="M8 12.6V18C8 18.6 8.4 19 9 19C9.6 19 10 18.6 10 18V12.6H8Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Project Redux</a>
-                <div class="text-gray-400 fs-7">New frontend admin theme</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">2 days</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-primary">
-                  <!--begin::Svg Icon | path: icons/duotune/maps/map001.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path opacity="0.3" d="M6 22H4V3C4 2.4 4.4 2 5 2C5.6 2 6 2.4 6 3V22Z" fill="currentColor" />
-                      <path d="M18 14H4V4H18C18.8 4 19.2 4.9 18.7 5.5L16 9L18.8 12.5C19.3 13.1 18.8 14 18 14Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Project Breafing</a>
-                <div class="text-gray-400 fs-7">Product launch status update</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">21 Jan</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-info">
-                  <!--begin::Svg Icon | path: icons/duotune/general/gen006.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path opacity="0.3" d="M22 5V19C22 19.6 21.6 20 21 20H19.5L11.9 12.4C11.5 12 10.9 12 10.5 12.4L3 20C2.5 20 2 19.5 2 19V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5ZM7.5 7C6.7 7 6 7.7 6 8.5C6 9.3 6.7 10 7.5 10C8.3 10 9 9.3 9 8.5C9 7.7 8.3 7 7.5 7Z" fill="currentColor" />
-                      <path d="M19.1 10C18.7 9.60001 18.1 9.60001 17.7 10L10.7 17H2V19C2 19.6 2.4 20 3 20H21C21.6 20 22 19.6 22 19V12.9L19.1 10Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Banner Assets</a>
-                <div class="text-gray-400 fs-7">Collection of banner images</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">21 Jan</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center">
-              <!--begin::Symbol-->
-              <div class="symbol symbol-35px me-4">
-                <span class="symbol-label bg-light-warning">
-                  <!--begin::Svg Icon | path: icons/duotune/art/art002.svg-->
-                  <span class="svg-icon svg-icon-2 svg-icon-warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                      <path opacity="0.3" d="M8.9 21L7.19999 22.6999C6.79999 23.0999 6.2 23.0999 5.8 22.6999L4.1 21H8.9ZM4 16.0999L2.3 17.8C1.9 18.2 1.9 18.7999 2.3 19.1999L4 20.9V16.0999ZM19.3 9.1999L15.8 5.6999C15.4 5.2999 14.8 5.2999 14.4 5.6999L9 11.0999V21L19.3 10.6999C19.7 10.2999 19.7 9.5999 19.3 9.1999Z" fill="currentColor" />
-                      <path d="M21 15V20C21 20.6 20.6 21 20 21H11.8L18.8 14H20C20.6 14 21 14.4 21 15ZM10 21V4C10 3.4 9.6 3 9 3H4C3.4 3 3 3.4 3 4V21C3 21.6 3.4 22 4 22H9C9.6 22 10 21.6 10 21ZM7.5 18.5C7.5 19.1 7.1 19.5 6.5 19.5C5.9 19.5 5.5 19.1 5.5 18.5C5.5 17.9 5.9 17.5 6.5 17.5C7.1 17.5 7.5 17.9 7.5 18.5Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <!--end::Svg Icon-->
-                </span>
-              </div>
-              <!--end::Symbol-->
-              <!--begin::Title-->
-              <div class="mb-0 me-2">
-                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Icon Assets</a>
-                <div class="text-gray-400 fs-7">Collection of SVG icons</div>
-              </div>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">20 March</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-        </div>
-        <!--end::Items-->
-        <!--begin::View more-->
-        <div class="py-3 text-center border-top">
-          <a href="../../demo1/dist/pages/user-profile/activity.html" class="btn btn-color-gray-600 btn-active-color-primary">View All
-          <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-          <span class="svg-icon svg-icon-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-              <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-            </svg>
-          </span>
-          <!--end::Svg Icon--></a>
-        </div>
-        <!--end::View more-->
-      </div>
-      <!--end::Tab panel-->
-      <!--begin::Tab panel-->
-      <div class="tab-pane fade show active" id="kt_topbar_notifications_2" role="tabpanel">
-        <!--begin::Wrapper-->
-        <div class="d-flex flex-column px-9">
-          <!--begin::Section-->
-          <div class="pt-10 pb-0">
-            <!--begin::Title-->
-            <h3 class="text-dark text-center fw-bolder">Get Pro Access</h3>
-            <!--end::Title-->
-            <!--begin::Text-->
-            <div class="text-center text-gray-600 fw-bold pt-1">Outlines keep you honest. They stoping you from amazing poorly about drive</div>
-            <!--end::Text-->
-            <!--begin::Action-->
-            <div class="text-center mt-5 mb-9">
-              <a href="#" class="btn btn-sm btn-primary px-6">Upgrade</a>
-            </div>
-            <!--end::Action-->
-          </div>
-          <!--end::Section-->
-          <!--begin::Illustration-->
-          <div class="text-center px-4">
-            <img class="mw-100 mh-200px" alt="image" src="/assets/backend/media/illustrations/sketchy-1/1.png" />
-          </div>
-          <!--end::Illustration-->
-        </div>
-        <!--end::Wrapper-->
-      </div>
-      <!--end::Tab panel-->
-      <!--begin::Tab panel-->
-      <div class="tab-pane fade" id="kt_topbar_notifications_3" role="tabpanel">
-        <!--begin::Items-->
-        <div class="scroll-y mh-325px my-5 px-8">
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-success me-4">200 OK</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">New order</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Just now</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-danger me-4">500 ERR</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">New customer</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">2 hrs</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-success me-4">200 OK</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Payment process</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">5 hrs</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-warning me-4">300 WRN</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Search query</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">2 days</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-success me-4">200 OK</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">API connection</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">1 week</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-success me-4">200 OK</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Database restore</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Mar 5</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-warning me-4">300 WRN</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">System update</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">May 15</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-warning me-4">300 WRN</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Server OS update</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Apr 3</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-warning me-4">300 WRN</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">API rollback</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Jun 30</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-danger me-4">500 ERR</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Refund process</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Jul 10</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-danger me-4">500 ERR</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Withdrawal process</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Sep 10</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-          <!--begin::Item-->
-          <div class="d-flex flex-stack py-4">
-            <!--begin::Section-->
-            <div class="d-flex align-items-center me-2">
-              <!--begin::Code-->
-              <span class="w-70px badge badge-light-danger me-4">500 ERR</span>
-              <!--end::Code-->
-              <!--begin::Title-->
-              <a href="#" class="text-gray-800 text-hover-primary fw-bold">Mail tasks</a>
-              <!--end::Title-->
-            </div>
-            <!--end::Section-->
-            <!--begin::Label-->
-            <span class="badge badge-light fs-8">Dec 10</span>
-            <!--end::Label-->
-          </div>
-          <!--end::Item-->
-        </div>
-        <!--end::Items-->
-        <!--begin::View more-->
-        <div class="py-3 text-center border-top">
-          <a href="../../demo1/dist/pages/user-profile/activity.html" class="btn btn-color-gray-600 btn-active-color-primary">View All
-          <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-          <span class="svg-icon svg-icon-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-              <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-            </svg>
-          </span>
-          <!--end::Svg Icon--></a>
-        </div>
-        <!--end::View more-->
-      </div>
-      <!--end::Tab panel-->
-    </div>
-    <!--end::Tab content-->
   </div>
-  <!--end::Menu-->
-  <!--end::Menu wrapper-->
-</div>
+  <!--end::Toggle-->
+
+  <!--begin::Dropdown-->
+  <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+    <form>
+      <!--begin::Header-->
+      <div class="d-flex flex-column pt-12 bgi-size-cover bgi-no-repeat rounded-top" style="background-image: url(/assets/backend/media/misc/bg-1.jpg)">
+        <!--begin::Title-->
+        <h4 class="d-flex flex-center rounded-top">
+          <span class="text-white">User Notifications</span>
+          <span class="btn btn-text btn-success btn-sm font-weight-bold btn-font-md ml-2">23 new</span>
+        </h4>
+        <!--end::Title-->
+
+        <!--begin::Tabs-->
+        <ul class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-line-transparent-white nav-tabs-line-active-border-success mt-3 px-8" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications"  >Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#topbar_notifications_events"  >Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs"  >Logs</a>
+          </li>
+        </ul>
+        <!--end::Tabs-->
+      </div>
+      <!--end::Header-->
+
+      <!--begin::Content-->
+      <div class="tab-content">
+        <!--begin::Tabpane-->
+        <div class="tab-pane active show p-8" id="topbar_notifications_notifications" role="tabpanel">
+          <!--begin::Scroll-->
+          <div class="scroll pr-7 mr-n7" data-scroll="true" data-height="300" data-mobile-height="200">
+            <!--begin::Item-->
+            <div class="d-flex align-items-center mb-6">
+              <!--begin::Symbol-->
+              <div class="symbol symbol-40 symbol-light-primary mr-5">
+                <span class="symbol-label">
+                  <span class="svg-icon svg-icon-lg svg-icon-primary"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Home/Library.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect x="0" y="0" width="24" height="24"/>
+                      <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000"/>
+                      <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1"/>
+                    </g>
+                  </svg><!--end::Svg Icon--></span>                    </span>
+                </div>
+                <!--end::Symbol-->
+
+                <!--begin::Text-->
+                <div class="d-flex flex-column font-weight-bold">
+                  <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Cool App</a>
+                  <span class="text-muted">Marketing campaign planning</span>
+                </div>
+                <!--end::Text-->
+              </div>
+              <!--end::Item-->
+
+              <!--begin::Item-->
+              <div class="d-flex align-items-center mb-6">
+                <!--begin::Symbol-->
+                <div class="symbol symbol-40 symbol-light-warning mr-5">
+                  <span class="symbol-label">
+                    <span class="svg-icon svg-icon-lg svg-icon-warning"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Communication/Write.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24"/>
+                        <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953) "/>
+                        <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+                      </g>
+                    </svg><!--end::Svg Icon--></span>                    </span>
+                  </div>
+                  <!--end::Symbol-->
+
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column font-weight-bold">
+                    <a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg">Awesome SAAS</a>
+                    <span class="text-muted">Project status update meeting</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+
+                <!--begin::Item-->
+                <div class="d-flex align-items-center mb-6">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-40 symbol-light-success mr-5">
+                    <span class="symbol-label">
+                      <span class="svg-icon svg-icon-lg svg-icon-success"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Communication/Group-chat.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <rect x="0" y="0" width="24" height="24"/>
+                          <path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000"/>
+                          <path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3"/>
+                        </g>
+                      </svg><!--end::Svg Icon--></span>                    </span>
+                    </div>
+                    <!--end::Symbol-->
+
+                    <!--begin::Text-->
+                    <div class="d-flex flex-column font-weight-bold">
+                      <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Claudy Sys</a>
+                      <span class="text-muted">Project Deployment & Launch</span>
+                    </div>
+                    <!--end::Text-->
+                  </div>
+                  <!--end::Item-->
+
+                  <!--begin::Item-->
+                  <div class="d-flex align-items-center mb-6">
+                    <!--begin::Symbol-->
+                    <div class="symbol symbol-40 symbol-light-danger mr-5">
+                      <span class="symbol-label">
+                        <span class="svg-icon svg-icon-lg svg-icon-danger"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/General/Attachment2.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect x="0" y="0" width="24" height="24"/>
+                            <path d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z" fill="#000000" opacity="0.3" transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641) "/>
+                            <path d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z" fill="#000000" transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359) "/>
+                            <path d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z" fill="#000000" opacity="0.3" transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146) "/>
+                            <path d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z" fill="#000000" opacity="0.3" transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961) "/>
+                          </g>
+                        </svg><!--end::Svg Icon--></span>                    </span>
+                      </div>
+                      <!--end::Symbol-->
+
+                      <!--begin::Text-->
+                      <div class="d-flex flex-column font-weight-bold">
+                        <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Trilo Service</a>
+                        <span class="text-muted">Analytics & Requirement Study</span>
+                      </div>
+                      <!--end::Text-->
+                    </div>
+                    <!--end::Item-->
+
+                    <!--begin::Item-->
+                    <div class="d-flex align-items-center mb-6">
+                      <!--begin::Symbol-->
+                      <div class="symbol symbol-40 symbol-light-info mr-5">
+                        <span class="symbol-label">
+                          <span class="svg-icon svg-icon-lg  svg-icon-info"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Communication/Shield-user.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <rect x="0" y="0" width="24" height="24"/>
+                              <path d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z" fill="#000000" opacity="0.3"/>
+                              <path d="M12,11 C10.8954305,11 10,10.1045695 10,9 C10,7.8954305 10.8954305,7 12,7 C13.1045695,7 14,7.8954305 14,9 C14,10.1045695 13.1045695,11 12,11 Z" fill="#000000" opacity="0.3"/>
+                              <path d="M7.00036205,16.4995035 C7.21569918,13.5165724 9.36772908,12 11.9907452,12 C14.6506758,12 16.8360465,13.4332455 16.9988413,16.5 C17.0053266,16.6221713 16.9988413,17 16.5815,17 C14.5228466,17 11.463736,17 7.4041679,17 C7.26484009,17 6.98863236,16.6619875 7.00036205,16.4995035 Z" fill="#000000" opacity="0.3"/>
+                            </g>
+                          </svg><!--end::Svg Icon--></span>                    </span>
+                        </div>
+                        <!--end::Symbol-->
+
+                        <!--begin::Text-->
+                        <div class="d-flex flex-column font-weight-bold">
+                          <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Bravia SAAS</a>
+                          <span class="text-muted">Reporting Application</span>
+                        </div>
+                        <!--end::Text-->
+                      </div>
+                      <!--end::Item-->
+
+                      <!--begin::Item-->
+                      <div class="d-flex align-items-center mb-6">
+                        <!--begin::Symbol-->
+                        <div class="symbol symbol-40 symbol-light-danger mr-5">
+                          <span class="symbol-label">
+                            <span class="svg-icon svg-icon-lg  svg-icon-danger"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Communication/Mail-notification.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24"/>
+                                <path d="M21,12.0829584 C20.6747915,12.0283988 20.3407122,12 20,12 C16.6862915,12 14,14.6862915 14,18 C14,18.3407122 14.0283988,18.6747915 14.0829584,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,12.0829584 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z" fill="#000000"/>
+                                <circle fill="#000000" opacity="0.3" cx="19.5" cy="17.5" r="2.5"/>
+                              </g>
+                            </svg><!--end::Svg Icon--></span>                    </span>
+                          </div>
+                          <!--end::Symbol-->
+
+                          <!--begin::Text-->
+                          <div class="d-flex flex-column font-weight-bold">
+                            <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Express Wind</a>
+                            <span class="text-muted">Software Analytics & Design</span>
+                          </div>
+                          <!--end::Text-->
+                        </div>
+                        <!--end::Item-->
+
+                        <!--begin::Item-->
+                        <div class="d-flex align-items-center mb-6">
+                          <!--begin::Symbol-->
+                          <div class="symbol symbol-40 symbol-light-success mr-5">
+                            <span class="symbol-label">
+                              <span class="svg-icon svg-icon-lg  svg-icon-success"><!--begin::Svg Icon | path:/assets/backend/media/svg/icons/Design/Bucket.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <rect x="0" y="0" width="24" height="24"/>
+                                  <path d="M5,5 L5,15 C5,15.5948613 5.25970314,16.1290656 5.6719139,16.4954176 C5.71978107,16.5379595 5.76682388,16.5788906 5.81365532,16.6178662 C5.82524933,16.6294602 15,7.45470952 15,7.45470952 C15,6.9962515 15,6.17801499 15,5 L5,5 Z M5,3 L15,3 C16.1045695,3 17,3.8954305 17,5 L17,15 C17,17.209139 15.209139,19 13,19 L7,19 C4.790861,19 3,17.209139 3,15 L3,5 C3,3.8954305 3.8954305,3 5,3 Z" fill="#000000" fill-rule="nonzero" transform="translate(10.000000, 11.000000) rotate(-315.000000) translate(-10.000000, -11.000000) "/>
+                                  <path d="M20,22 C21.6568542,22 23,20.6568542 23,19 C23,17.8954305 22,16.2287638 20,14 C18,16.2287638 17,17.8954305 17,19 C17,20.6568542 18.3431458,22 20,22 Z" fill="#000000" opacity="0.3"/>
+                                </g>
+                              </svg><!--end::Svg Icon--></span>                    </span>
+                            </div>
+                            <!--end::Symbol-->
+
+                            <!--begin::Text-->
+                            <div class="d-flex flex-column font-weight-bold">
+                              <a href="#" class="text-dark text-hover-primary mb-1 font-size-lg">Bruk Fitness</a>
+                              <span class="text-muted">Web Design & Development</span>
+                            </div>
+                            <!--end::Text-->
+                          </div>
+                          <!--end::Item-->
+                        </div>
+                        <!--end::Scroll-->
+
+                        <!--begin::Action-->
+                        <div class="d-flex flex-center pt-7"><a href="#" class="btn btn-light-primary font-weight-bold text-center">See All</a></div>
+                        <!--end::Action-->
+                      </div>
+                      <!--end::Tabpane-->
+
+                      <!--begin::Tabpane-->
+                      <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                        <!--begin::Nav-->
+                        <div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-line-chart text-success"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New report has been received
+                                </div>
+                                <div class="text-muted">
+                                  23 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-paper-plane text-danger"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  Finance report has been generated
+                                </div>
+                                <div class="text-muted">
+                                  25 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-user flaticon2-line- text-success"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New order has been received
+                                </div>
+                                <div class="text-muted">
+                                  2 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-pin text-primary"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New customer is registered
+                                </div>
+                                <div class="text-muted">
+                                  3 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-sms text-danger"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  Application has been approved
+                                </div>
+                                <div class="text-muted">
+                                  3 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-pie-chart-3 text-warning"></i>
+                              </div>
+                              <div class="navinavinavi-text">
+                                <div class="font-weight-bold">
+                                  New file has been uploaded
+                                </div>
+                                <div class="text-muted">
+                                  5 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon-pie-chart-1 text-info"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New user feedback received
+                                </div>
+                                <div class="text-muted">
+                                  8 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-settings text-success"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  System reboot has been successfully completed
+                                </div>
+                                <div class="text-muted">
+                                  12 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon-safe-shield-protection text-primary"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New order has been placed
+                                </div>
+                                <div class="text-muted">
+                                  15 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-notification text-primary"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  Company meeting canceled
+                                </div>
+                                <div class="text-muted">
+                                  19 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-fax text-success"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New report has been received
+                                </div>
+                                <div class="text-muted">
+                                  23 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon-download-1 text-danger"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  Finance report has been generated
+                                </div>
+                                <div class="text-muted">
+                                  25 hrs ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon-security text-warning"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New customer comment recieved
+                                </div>
+                                <div class="text-muted">
+                                  2 days ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+
+                          <!--begin::Item-->
+                          <a href="#" class="navi-item">
+                            <div class="navi-link">
+                              <div class="navi-icon mr-2">
+                                <i class="flaticon2-analytics-1 text-success"></i>
+                              </div>
+                              <div class="navi-text">
+                                <div class="font-weight-bold">
+                                  New customer is registered
+                                </div>
+                                <div class="text-muted">
+                                  3 days ago
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!--end::Item-->
+                        </div>
+                        <!--end::Nav-->
+                      </div>
+                      <!--end::Tabpane-->
+
+                      <!--begin::Tabpane-->
+                      <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                        <!--begin::Nav-->
+                        <div class="d-flex flex-center text-center text-muted min-h-200px">
+                          All caught up!
+                          <br/>
+                          No new notifications.
+                        </div>
+                        <!--end::Nav-->
+                      </div>
+                      <!--end::Tabpane-->
+                    </div>
+                    <!--end::Content-->
+                  </form>
+                </div>
+                <!--end::Dropdown-->
+              </div>
