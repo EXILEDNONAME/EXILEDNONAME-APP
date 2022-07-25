@@ -15,7 +15,7 @@
     </div>
 
     <div class="d-flex align-items-center gap-2 gap-lg-3">
-      <a href="../../demo1/dist/.html" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create</a>
+      <a href="../../demo1/dist/.html" class="btn btn-sm btn-primary">Create</a>
     </div>
   </div>
 </div>

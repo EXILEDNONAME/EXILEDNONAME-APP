@@ -292,7 +292,7 @@
             <!--end::Text-->
             <!--begin::Action-->
             <div class="text-center mt-5 mb-9">
-              <a href="#" class="btn btn-sm btn-primary px-6" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade</a>
+              <a href="#" class="btn btn-sm btn-primary px-6">Upgrade</a>
             </div>
             <!--end::Action-->
           </div>
