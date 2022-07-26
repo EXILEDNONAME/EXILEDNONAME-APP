@@ -53,6 +53,7 @@
     </div>
   </div>
 
+  @include('pages.backend.includes.sticky-toolbar')
   @include('pages.backend.includes.scroll-top')
   @include('pages.backend.includes.js')
 

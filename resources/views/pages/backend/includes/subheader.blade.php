@@ -13,7 +13,7 @@
     </div>
 
     <div class="d-flex align-items-center">
-      <a href="#" class="btn btn-light-primary font-weight-bolder btn-sm"> Actions </a>
+      <a href="#" class="btn btn-light-primary font-weight-bolder btn-sm"><i class="fas fa-history" data-toggle="tooltip" title="" data-original-title="{{ trans('default.label.recently-delete') }}"></i></a>
     </div>
   </div>
 </div>

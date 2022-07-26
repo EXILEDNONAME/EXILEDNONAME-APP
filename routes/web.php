@@ -30,5 +30,15 @@ Route::group([
   'prefix' => 'dashboard/tables/generals',
   'namespace' => 'Backend\System\Table',
 ], function(){
+  Route::get('active/{id}', 'GeneralController@active')->name('active');
+  Route::get('inactive/{id}', 'GeneralController@inactive')->name('inactive');
+  Route::get('restore/{id}', 'GeneralController@restore')->name('restore');
+  Route::get('restoreall', 'GeneralController@restoreall')->name('restore-all');
+  Route::get('delete-permanent/{id}', 'GeneralController@delete_permanent')->name('delete-permanent');
+  Route::get('delete-permanentall', 'GeneralController@delete_permanentall')->name('delete-permanentall');
+  Route::get('delete/{id}', 'GeneralController@delete')->name('delete');
+  Route::get('deleteall', 'GeneralController@deleteall')->name('delete-all');
+  Route::get('history', 'GeneralController@history')->name('history');
+  Route::get('trash', 'GeneralController@trash')->name('trash');
   Route::resource('/', 'GeneralController')->parameters(['' => 'id']);
 });

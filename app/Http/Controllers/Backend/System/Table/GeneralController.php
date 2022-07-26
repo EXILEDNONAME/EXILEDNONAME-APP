@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Activitylog\Models\Activity;
 
-use App\Http\Requests\Backend\System\Dummy\Table\General\StoreRequest;
-use App\Http\Requests\Backend\System\Dummy\Table\General\UpdateRequest;
+use App\Http\Requests\Backend\System\Table\General\StoreRequest;
+use App\Http\Requests\Backend\System\Table\General\UpdateRequest;
 
 class GeneralController extends Controller {
 

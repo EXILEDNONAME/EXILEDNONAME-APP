@@ -13,6 +13,11 @@
           <span class="card-label font-weight-bolder text-dark"> {{ trans('default.label.main') }} </span>
         </h4>
         <div class="card-toolbar">
+
+          <a href="{{ URL::Current() }}/create" class="btn btn-icon btn-sm btn-hover-light-primary mr-1">
+            <i class="fas fa-plus" data-toggle="tooltip" title="" data-original-title="{{ trans('default.label.create') }}"></i>
+          </a>
+
           <a id="table-refresh" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="reload">
             <i class="fas fa-sync-alt" data-toggle="tooltip" title="" data-original-title="{{ trans('default.label.reload') }}"></i>
           </a>
@@ -58,9 +63,28 @@
           <a href="#" class="btn btn-icon btn-sm btn-hover-light-primary mr-1" data-card-tool="toggle">
             <i class="fas fa-caret-down"></i>
           </a>
+          <div class="collapse" id="toolbar_delete">
+            <a data-url="" class="delete-all btn btn-sm btn-icon btn-clean btn-icon-md" data-toggle="tooltip" title="{{ trans('default.label.delete-selected') }}"><i class="text-danger fas fa-trash"></i></a>
+          </div>
         </div>
       </div>
       <div class="card-body">
+
+        @if ($message = Session::get('success'))
+        <div id="toast-container" class="toast-bottom-right">
+          <div class="toast toast-success" aria-live="polite">
+            <div class="toast-message">{{ $message }}</div>
+          </div>
+        </div>
+        @endif
+
+        @if ($message = Session::get('error'))
+        <div id="toast-container" class="toast-bottom-right">
+          <div class="toast toast-error" aria-live="polite">
+            <div class="toast-message">{{ $message }}</div>
+          </div>
+        </div>
+        @endif
 
         <div class="accordion" id="accordionExample1">
           <div id="collapseOne1" class="collapse hide" data-parent="#accordionExample1">
@@ -112,56 +136,157 @@
       </div>
 
       <div class="card-body pt-0">
-        <div class="example-preview">
-          <div class="timeline timeline-2">
-            <div class="timeline-bar"></div>
-            <div class="timeline-item">
-              <div class="timeline-badge"></div>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                <a href="#">12 new users registered and pending for activation</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-badge bg-success"></span>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                Scheduled system reboot as completed.
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-badge"></span>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                <span class="mr-3">
-                  New order has been placed and pending for processing.
-                </span>
+        <div data-scroll="true" data-height="300">
+                  <div class="timeline timeline-3">
+                    <div class="timeline-items">
 
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-badge bg-danger"></span>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                <span class="mr-3">
-                  Database server overloaded 80% and requires quick reboot <span class="label label-inline label-danger font-weight-bolder">pending</span>
-                </span>
+                      @php $history = histories($model)->take(10); @endphp
+                      @if (!empty($history) && !empty($history->count()))
+                      @foreach($history as $item)
 
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-badge bg-warning"></span>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                <span class="mr-3">
-                  System error occured and hard drive has been shutdown.
-                </span>
+                      @if ($item->description == 'created')
+                      @foreach($item['properties'] as $data_object)
+                      <div class="timeline-item">
+                        <div class="timeline-media"><i class="fas fa-plus text-success"></i></div>
+                        <div class="timeline-content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="text-muted"><small> {{ $item->created_at->diffForHumans() }} </small></span></div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="" data-placement="left">
+                              @if (!empty($item->causer->name))
+                              <span class="text-muted pull-right"><small> {{ $item->causer->name }} </small></span>
+                              @else
+                              <span class="text-muted pull-right"><small><s> {{ trans("default.label.not-found") }} </s></small></span>
+                              @endif
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="font-weight-bold text-success"> {{ trans("default.label.item-created") }} </span><br>
+                              @if (!empty($data_object['name']))
+                              {{ $data_object['name'] }}
+                              @endif
+                            </div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="View" data-placement="left">
+                              <span class="text-muted pull-right">
+                                <small>
+                                  <a href="{{ URL::Current() }}/{{ $item->subject_id }}"><i class="fas fa-eye"></i></a>
+                                </small>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      @endforeach
+                      @endif
 
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-badge bg-success"></span>
-              <div class="timeline-content d-flex align-items-center justify-content-between">
-                Production server is rebooting.
-              </div>
-            </div>
-          </div>
-        </div>
+                      @if ($item->description == 'updated')
+                      <div class="timeline-item">
+                        <div class="timeline-media"><i class="fas fa-magic text-warning"></i></div>
+                        <div class="timeline-content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="text-muted"><small> {{ $item->created_at->diffForHumans() }} </small></span></div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="" data-placement="left">
+                              @if (!empty($item->causer->name))
+                              <span class="text-muted pull-right"><small> {{ $item->causer->name }} </small></span>
+                              @else
+                              <span class="text-muted pull-right"><small><s> {{ trans("default.label.not-found") }} </s></small></span>
+                              @endif
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="font-weight-bold text-warning"> {{ trans("default.label.item-updated") }} </span><br>
+                              From <b>{{ $item['properties']['old']['name'] }}</b> to <b>{{ $item['properties']['attributes']['name'] }}</b>
+                            </div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="View" data-placement="left">
+                              <span class="text-muted pull-right">
+                                <small>
+                                  <a href="{{ URL::Current() }}/{{ $item->subject_id }}"><i class="fas fa-eye"></i></a>
+                                </small>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      @endif
+
+                      @if ($item->description == 'deleted')
+                      @foreach($item['properties'] as $data_object)
+                      <div class="timeline-item">
+                        <div class="timeline-media"><i class="fas fa-minus text-danger"></i></div>
+                        <div class="timeline-content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="text-muted"><small> {{ $item->created_at->diffForHumans() }} </small></span></div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="" data-placement="left">
+                              @if (!empty($item->causer->name))
+                              <span class="text-muted pull-right"><small> {{ $item->causer->name }} </small></span>
+                              @else
+                              <span class="text-muted pull-right"><small><s> {{ trans("default.label.not-found") }} </s></small></span>
+                              @endif
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="font-weight-bold text-danger"> {{ trans("default.label.item-deleted") }} </span><br>
+                              @if (!empty($data_object['name']))
+                              {{ $data_object['name'] }}
+                              @endif
+                            </div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="View" data-placement="left">
+                              <span class="text-muted pull-right">
+                                <small>
+                                  <a href="{{ URL::Current() }}/{{ $item->subject_id }}"><i class="fas fa-eye"></i></a>
+                                </small>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      @endforeach
+                      @endif
+
+                      @if ($item->description == 'restored')
+                      @foreach($item['properties'] as $data_object)
+                      <div class="timeline-item">
+                        <div class="timeline-media"><i class="fas fa-undo text-info"></i></div>
+                        <div class="timeline-content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="text-muted"><small> {{ $item->created_at->diffForHumans() }} </small></span></div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="" data-placement="left">
+                              @if (!empty($item->causer->name))
+                              <span class="text-muted pull-right"><small> {{ $item->causer->name }} </small></span>
+                              @else
+                              <span class="text-muted pull-right"><small><s> {{ trans("default.label.not-found") }} </s></small></span>
+                              @endif
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="mr-2"><span class="font-weight-bold text-info"> {{ trans("default.label.item-restored") }} </span><br>
+                              @if (!empty($data_object['name']))
+                              {{ $data_object['name'] }}
+                              @endif
+                            </div>
+                            <div class="dropdown ml-2" data-toggle="tooltip" title="View" data-placement="left">
+                              <span class="text-muted pull-right">
+                                <small>
+                                  <a href="{{ URL::Current() }}/{{ $item->subject_id }}"><i class="fas fa-eye"></i></a>
+                                </small>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      @endforeach
+                      @endif
+
+                      @endforeach
+                      @else
+                      {{ trans("default.label.no-recent-history") }} ...
+                      @endif
+                    </div>
+                  </div>
+                </div>
+
+        <hr>
+        <center><a href="#" class="btn btn-sm btn-light-primary mr-1"> Show All </a></center>
+
       </div>
     </div>
   </div>
@@ -461,7 +586,7 @@ var KTDatatablesExtensionsKeytable = function() {
       var strEXILEDNONAME = exilednonameArr.join(",");
       Swal.fire({
         title: "Are you sure?",
-        text: "{{ trans('default.label.confirm-deleteall') }}",
+        text: "{{ trans('default.label.confirm-delete-selected') }}",
         icon: "warning",
         showCancelButton: true,
         confirmButtonText: "Yes",
